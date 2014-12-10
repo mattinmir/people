@@ -4,12 +4,14 @@
 class Person
 {
 public:
-	virtual ~Person() {}
+	Person(int iage);
 
-	virtual int get_age() const;
+	~Person() {}
+
+	int get_age() const;
 
 
-private:
+protected:
 	int age;
 };
 
